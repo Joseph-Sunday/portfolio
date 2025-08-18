@@ -16,36 +16,39 @@
                     <p>inbio</p>
                 </div>
 
-                <div class="links">
-                    <div class="dropdown">
-                        <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
-                        <div class="dropdown-content">
-                            <ul>
-                                <a href=""><li>Home</li></a>
-                                <a href="">
-                                    <li>About</li>
-                                </a>
-                                <a href="">
-                                    <li>Resume</li>
-                                </a>
-                                <a href="">
-                                    <li>Contacts</li>
-                                </a>
-                            </ul>
+                <div class="flex">
+                    <div class="links">
+                        <div class="dropdown">
+                            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <a href="#home">
+                                        <li>Home</li>
+                                    </a>
+                                    <a href="#about">
+                                        <li>About</li>
+                                    </a>
+                                    <a href="#resume">
+                                        <li>Resume</li>
+                                    </a>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     
-                </div>
+                    <div class="buttons">
+                        <button><i class="fa-solid fa-shopping-cart"></i></button>
+                    </div>
 
-                <div class="buttons">
-                    <button><i class="fa-solid fa-shopping-cart"></i></button>
-                    <button>Buy Now</button>
+                    <div class="buttons">
+                        <button><i class="fa-solid fa-address-book"></i></button>
+                    </div>
                 </div>
             </section>
         </nav>
     </header>
     <main>
-        <section class="container">
+        <section class="container" id="home">
             <div class="bio">
                 <article>
                     <p>Welcome to my world</p>
@@ -77,8 +80,8 @@
         </section>
 
         <hr>
-        <section class="what_i_do">
-            <h1>What i Do</h1>
+        <section class="what_i_do" id="about">
+            <h1 class="padding-left">What i Do</h1>
             <div class="container">
                 <div class="field_container">
                     <div>
@@ -105,9 +108,9 @@
                 </div>
             </div>
 
-            <hr>
-
         </section>
+
+        <hr>
             
         <section class="portfolio">
             <p>Visit my portfolio and keep your feedback</p>
@@ -115,25 +118,22 @@
             <div class="container">
                 <div class="project">
                     <div>
-                        <img src="" alt="">
-                        <p>Project Title</p>
-                        <button>Visit</button>
+                        <img src="/images/Online_fashion_store.png" alt="online fashion store">
+                        <a href="https://jshifufashionstore.netlify.app"><button class="project-btn-first-child">Visit</button></a>
                     </div>
                 </div>
             
                 <div class="project">
                     <div>
-                        <img src="" alt="">
-                        <p>Project Title</p>
-                        <button>Visit</button>
+                        <img src="/images/online_food_store.png" alt="">
+                        <button class="project-btn-second-child">Visit</button>
                     </div>
                 </div>
             
                 <div class="project">
                     <div>
-                        <img src="" alt="">
-                        <p>Project Title</p>
-                        <button>Visit</button>
+                        <img src="/images/Online_shop.png" alt="">
+                        <button class="project-btn-last-child">Visit</button>
                     </div>
                 </div>
             </div>
@@ -142,13 +142,23 @@
             <div class="feedback">
                 <h3>Your Feedback</h3>
                 <textarea name="feedback" id="feedback" placeholder="Your feedback..." rows="10" cols="30"></textarea>
-                <button>Submit</button>
+                <button><i class="fa-solid fa-envelope"></i></button>
+            </div>
+        </section>
+
+        <section class="resume" id="resume">
+            <h1>Resume</h1>
+            <div>
+                <img src="" alt="Resume">
+                <img src="" alt="Resume">
             </div>
         </section>
     </main>
 
     <footer>
         <div>
+            <h4> Contact Info</h4>
+            <span><i class="fa-solid fa-phone-volume"></i> +234 913 121 5664</span>
             <p>Joseph Ochefu Sunday Portfolio <i class="fa-regular fa-copyright"></i></p>
         </div>
     </footer>
