@@ -392,6 +392,26 @@ main div.feedback button:hover {
     background: #fff;
 }
 
+main section.resume div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8em;
+}
+
+main section.resume h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    padding-bottom: .5em
+}
+
+main section.resume img{
+    width: 50%;
+    border-radius: 5px;
+    box-shadow: 0px 10px 40px 6px #04040433;
+}
+
 /* FOOTER STYLES */
 
 footer span, footer p {
@@ -672,6 +692,26 @@ footer div {
         display: block;
         width: 60%;
         margin-bottom: 1em;
+    }
+
+    main section.resume div {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: .8em;
+    }
+
+    main section.resume h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-bottom: .5em
+    }
+
+    main section.resume img {
+        width: 40%;
+        border-radius: 5px;
+        box-shadow: 0px 10px 40px 6px #04040433;   
     }
 
 }
@@ -992,6 +1032,115 @@ footer div {
     }
 
     main section.portfolio .container .project div img{
+        border-radius: 5px;
+    }
+
+    .project-btn-first-child {
+        position: absolute;
+        top: 85%;
+        left: 6%;
+        padding: .5em;
+        border: none;
+        border-radius: 5px;
+        box-shadow: -2px 2px 1px 0px #00000033;
+        width: 35%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .project-btn-second-child {
+        position: absolute;
+        top: 85%;
+        left: 6%;
+        padding: .5em;
+        border: none;
+        border-radius: 5px;
+        box-shadow: -2px 2px 1px 0px #00000033;
+        width: 35%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .project-btn-last-child {
+        position: absolute;
+        top: 84%;
+        left: 6%;
+        padding: .5em;
+        border: none;
+        border-radius: 5px;
+        box-shadow: -2px 2px 1px 0px #00000033;
+        width: 35%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    main div.feedback textarea {
+        display: block;
+        width: 40%;
+        margin-bottom: 1em;
+    }
+
+    main div.feedback button {
+        width: 10%;
+    }
+
+    /* FOOTER STYLES */
+
+    footer {
+        position: static;
+        width: 100%;
+        top: 100%;
+    }
+
+}
+
+@media (min-width: 1100px) {
+
+    nav section.container div.inlogo p {
+        font-size: 1.3em;
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    nav section.container div.inlogo {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        width: 30%;
+    }
+
+    nav section.container div.inlogo img {
+        width: 30%;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    /* MAIN STYLES */
+
+    main section.container div.bio {
+        padding-bottom: 2em;
+    }
+
+    main section.container div.bio_img {
+        position: absolute;
+        left: 53%;
+        top: 12%;
+        width: 40%;
+        z-index: -1;
+        /* height: 10px; */
+    }
+
+    main section.portfolio .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    main section.portfolio div.container div.project {
+        padding: 1em;
+        height: 16em;
+    }
+
+    main section.portfolio .container .project div img {
         border-radius: 5px;
     }
 
@@ -1444,6 +1593,170 @@ footer div {
 
     main div.feedback button {
         width: 10%;
+    }
+
+        /* FOOTER STYLES */
+    
+    footer {
+        position: static;
+        width: 100%;
+        top: 100%;
+    }
+}
+
+@media (min-width: 2000px) {
+
+    header {
+        padding: 0 3.5em;
+    }
+
+    nav section.container div.inlogo p {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    nav section.container div.inlogo {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        width: 30%;
+    }
+
+    nav section.container div.inlogo img {
+        width: 14%;
+        height: 80px;
+        border-radius: 50%;
+    }
+    
+        /* MAIN STYLES */
+    main {
+        padding: 5em;
+    }
+
+    main section.container div.bio {
+        padding-bottom: 6em;
+    }
+
+    main section.container div.bio_img {
+        position: absolute;
+        left: 60%;
+        top: 12%;
+        width: 20%;
+        z-index: -1;
+        /* height: 10px; */
+    }
+
+    body main section.container {
+        padding: 5em;
+    }
+
+    .padding-left {
+        padding: 1em;
+    }
+
+    main section.what_i_do h1 {
+        margin-left: 1em;
+    }
+
+    main .field_container {
+        margin: 6em auto;
+        max-width: 100%;
+        width: 30%;
+    }
+
+    main section.portfolio {
+        padding-top: 2em;
+    }
+
+    main section.portfolio .container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        gap: 2em;
+        /* border: 1px solid; */
+        padding: 0 1em;
+    }
+
+    main section.portfolio div.container div.project {
+        padding: 1em;
+        margin-bottom: 3em;
+        height: 35em;
+    }
+
+    main section.portfolio .container .project div img{
+        border-radius: 5px;
+    }
+
+    .project-btn-first-child {
+        position: absolute;
+        top: 90%;
+        left: 2%;
+        padding: .5em;
+        border: none;
+        border-radius: 5px;
+        box-shadow: -2px 2px 1px 0px #00000033;
+        width: 35%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .project-btn-second-child {
+        position: absolute;
+        top: 90%;
+        left: 2%;
+        padding: .5em;
+        border: none;
+        border-radius: 5px;
+        box-shadow: -2px 2px 1px 0px #00000033;
+        width: 35%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .project-btn-last-child {
+        position: absolute;
+        top: 89%;
+        left: 3%;
+        padding: .5em;
+        border: none;
+        border-radius: 5px;
+        box-shadow: -2px 2px 1px 0px #00000033;
+        width: 35%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    main div.feedback {
+        margin-top: 8em;
+    }
+
+    main div.feedback textarea {
+        display: block;
+        width: 30%;
+        margin-bottom: 1em;
+    }
+
+    main div.feedback button {
+        width: 5%;
+    }
+
+    main section.resume div {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: .8em;
+    }
+
+    main section.resume h1 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: 600;
+        font-size: 1.5em;
+        padding-bottom: .5em
+    }
+
+    main section.resume img {
+        width: 30%;
+        border-radius: 5px;
+        box-shadow: 0px 10px 40px 6px #04040433;
     }
 
         /* FOOTER STYLES */
