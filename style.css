@@ -74,6 +74,7 @@ nav section.container {
     font-weight: 550;
     cursor: pointer;
     margin: 0 0 0 4rem;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .dropdown {
@@ -102,15 +103,41 @@ nav section.container {
 
 a {
     list-style-type: none;
+    /* transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; */
 }
 
 a:hover {
     background-color: #dcdada;
+    /* transform: translateY(-2px) scale(1.05); */
 }
 
 .dropdown-content a:hover {
     background-color: #f1f1f1;
+    color: #fe2856;
+    transform: translateY(-2px) scale(1.05);
 }
+
+/* @keyframes juggle {
+    0% {
+        transform: rotate(0deg) translateY(0);
+    }
+
+    25% {
+        transform: rotate(-5deg) translateY(-2px);
+    }
+
+    50% {
+        transform: rotate(5deg) translateY(2px);
+    }
+
+    75% {
+        transform: rotate(-3deg) translateY(-1px);
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(0);
+    } 
+} */
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -130,11 +157,13 @@ nav .buttons button {
     color: #fe2856;
     font-weight: 550;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 nav .buttons button:hover {
     background-color: #ff3f69;
     color: #fff;
+    transform: translateY(-2px) scale(1);
 }
 
 /* MAIN STYLES */
@@ -211,12 +240,14 @@ main .bio_buttons button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     cursor: pointer;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 main .bio_buttons button:hover {
     background-color: #ff3f69;
     color: #fff;
-    border: none;
+    border: 2px solid #fff;
+    transform: translateY(-2px) scale(1.05);
 }
 
 main .what_i_do {
@@ -322,6 +353,7 @@ main section.portfolio .container .project div button {
     box-shadow: -2px 2px 1px 0px #00000033;
     width: 35%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .project-btn-second-child {
@@ -334,6 +366,7 @@ main section.portfolio .container .project div button {
     box-shadow: -2px 2px 1px 0px #00000033;
     width: 35%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 .project-btn-last-child {
@@ -346,11 +379,13 @@ main section.portfolio .container .project div button {
     box-shadow: -2px 2px 1px 0px #00000033;
     width: 35%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 main section.portfolio .container .project div button:hover {
     color: #fff;
     background: #fd5d7f;
+    transform: translateY(-2px) scale(1.05);
 }
 
 main div.feedback {
@@ -564,12 +599,15 @@ footer div {
         padding: 10px 12px;
         /* text-decoration: none; */
     }
+
     a {
         list-style-type: none;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     }
 
     a:hover {
         text-decoration: underline;
+        transform: translateY(-2px) scale(1.05);
     }
 
     /* MAIN STYLES */
@@ -784,10 +822,12 @@ footer div {
 
     a {
         list-style-type: none;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
     }
 
     a:hover {
         text-decoration: underline;
+        transform: translateY(-2px) scale(1.05);
     }
 
     /* MAIN STYLES */
